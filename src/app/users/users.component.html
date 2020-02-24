@@ -1,0 +1,18 @@
+<div class="row">
+  <ul style="list-style: none" >
+    <li *ngFor=" let user of users">
+   <p> FirstName: {{user.name}} </p>
+   <p> Email  {{user.email}}</p>
+   <p> Address: {{user.address.street}}</p>
+   <p>Website: {{user.website}}</p>
+   <p>Work for: {{user.company.name}}</p>
+      <div>
+        <button class="btn btn-primary" (click)="toPosts(user.id)" >Check posts</button>
+      </div>
+      <hr>
+    </li>
+  </ul>
+
+
+
+</div>
